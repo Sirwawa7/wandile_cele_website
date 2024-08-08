@@ -1,0 +1,566 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/robotolight.ttf);
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.contentBR {
+  border-right: 1px solid white;
+}
+
+.contentBL {
+  border-left: 1px solid #9900ff;
+}
+
+.mobilecontentB {
+  border-right: 1px solid #9900ff;
+}
+
+.mailLink a {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+.mailLink a:hover {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+.footerLinks {
+  padding-top: 19px;
+}
+
+.footerLinks a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: rgb(255, 255, 255);
+}
+
+#footer .btn-light {
+  background-color: #337ab7;
+  color: white;
+}
+
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Social Media Section */
+
+.icon-space {
+  margin: 0 15px 0 15px;
+}
+
+.spacer {
+  max-width: 20px;
+}
+
+/* Social Media Icons */
+
+#socialsection {
+  display: block;
+  list-style: none outside;
+}
+
+.circlebutt {
+  background-color: #666666;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 100px;
+  border: 2px solid white;
+  transition: all 0.2s ease-in-out;
+}
+
+.circlebutt img {
+  height: 37px;
+  width: 37px;
+}
+
+.circlebutt:hover {
+  background-color: #9900ff;
+}
+
+/* Custom Horizontal Rule */
+
+.services hr {
+  border-top: 1px solid white;
+}
+
+.education hr {
+  border-top: 1px solid white;
+}
+
+.purple hr {
+  border-top: 1px solid white;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #9900ff;
+}
+
+hr.small {
+  max-width: 110px;
+  color: black;
+}
+
+hr.smallXL {
+  max-width: 140px;
+  color: #9900ff;
+}
+
+hr.smallW {
+  max-width: 100px;
+  border-top: 1px solid white;
+}
+
+hr.medium {
+  max-width: 250px;
+}
+hr.projectsW {
+  max-width: 290px;
+  border-top: 1px solid white;
+}
+
+hr.education {
+  max-width: 170px;
+}
+
+hr.footer {
+  max-width: 500px;
+}
+
+hr.projects {
+  max-width: 410px;
+}
+
+hr.green {
+  border-top: 1px solid #00cc33;
+}
+
+hr.red {
+  border-top: 1px solid red;
+}
+
+hr.mimir {
+  border-top: 1px solid #669999;
+}
+
+hr.lockheed {
+  border-top: 1px solid #203876;
+}
+
+hr.c1 {
+  border-top: 1px solid #c52324 ;
+}
+
+hr.cornell {
+  border-top: 1px solid #b31a1a;
+}
+
+hr.stevens {
+  border-top: 1px solid #9d1535;
+}
+
+hr.ub {
+  border-top: 1px solid #0a5cbc;
+}
+
+.h2margin h2 {
+  margin-top: 0px;
+}
+
+.h3margin h3 {
+  margin-top: 0px;
+}
+
+.paddlist {
+  padding-bottom: 11px;
+}
+
+/*------------------*/
+
+#menu-toggle {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+/* Header */
+
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bac.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.purple {
+  background-color: #9900ff;
+  color: white;
+}
+
+/* About */
+
+.about {
+  padding: 40px 0;
+}
+
+#aboutdesc .lead {
+  font-size: 17px;
+}
+
+/* Services */
+
+.services {
+  padding: 50px 0;
+}
+
+.service-item {
+  margin-bottom: 30px;
+}
+
+/* Resume color change */
+
+.bg-primary {
+  color: #fff;
+  background-color: #9900ff;
+}
+
+/*glyphicon colors */
+
+.text-primary {
+  color: #9900ff;
+}
+
+/* The send button in footer */
+
+#footer .btn-light {
+  background-color: #9900ff;
+}
+
+#footer .btn-light a:hover {
+  background-color: #a7a7a7;
+}
+
+/* Link colors */
+
+a {
+  color: #9900ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a7a7a7;
+  text-decoration: none;
+}
+
+/*email send button */
+
+form button {
+  color: white;
+  background: #9900ff;
+  border-radius: 0px;
+  transition: all 0.2s ease-in-out;
+}
+
+form .btn-lg:hover {
+  background-color: #a7a7a7;
+  color: white;
+}
+
+/* Callout the pic with text kinda thing*/
+
+.callout {
+  display: table;
+  width: 100%;
+  height: 300px;
+  color: #fff;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/davis.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.newImage {
+  height: 50px;
+  /*background-color: #9900ff;*/
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.newImage:hover {
+  /*background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(https://c1.staticflickr.com/9/8813/16951859128_37797940bf_h.jpg) no-repeat center center scroll;
+    background-size: cover; */
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease-in-out;
+}
+
+.butt-title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landscapebutt {
+  color: white;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://c1.staticflickr.com/1/446/19755587312_68a4d1a545_b.jpg) no-repeat center center scroll;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+.landscapebutt:hover {
+  color: white;
+  height: 250px;
+  -webkit-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.portraitbutt {
+  background: #80dfff;
+  color: white;
+  height: 250px;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://c1.staticflickr.com/8/7502/27837917304_2063e5b14b_h.jpg) no-repeat center center scroll;
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+}
+
+.portraitbutt:hover {
+  color: white;
+  height: 250px;
+  -webkit-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s ease-in-out;
+}
+
+.projectbutt {
+  color: white;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/projects.jpg) no-repeat center center scroll;
+  background-size: cover;
+  height: 250px;
+  transition: all 0.2s ease-in-out;
+}
+
+.projectbutt:hover {
+  color: white;
+  height: 250px;
+  -webkit-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 58px -5px rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+
+.port {
+  padding: 20px;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+.img-portfolio {
+  margin: 0 auto;
+}
+
+.img-portfolio:hover {
+  opacity: 0.8;
+}
+
+#mirror .img-portfolio:hover {}
+
+/* Resume */
+
+.resume {
+  padding: 30px 0;
+}
+
+.resume .btn {
+  margin: 10px;
+}
+
+/* Map */
+
+.map {
+  height: 500px;
+}
+
+@media(max-width:768px) {
+  .map {
+    height: 75%;
+  }
+}
+
+@media(max-width: 994px) {
+  #name {
+    margin-left: -20px;
+  }
+  .contentBL {
+    border-left: none;
+  }
+  .contentBR {
+    border-right: none;
+  }
+  #desktopcourse {
+    display: none;
+  }
+  #desktopfoot {
+    padding-left: 15px;
+  }
+  .divbuttons {
+    width: 100%;
+  }
+  .landscapebutt {
+    margin-bottom: 20px;
+    margin-top: -35px;
+  }
+  .projectbutt {
+    margin-top: -30px;
+  }
+  #footer {
+    background-color: #262626;
+    text-align: center;
+  }
+  .footerLinks {
+    padding-top: 0px;
+  }
+}
+
+@media(min-width: 994px) {
+  #team {
+    display: none;
+  }
+  #mobilecourse {
+    display: none;
+  }
+  .mobileHR {
+    display: none;
+  }
+  #desktopfoot {
+    padding-left: 50px;
+  }
+  #footer {
+    background-color: #262626;
+    text-align: left;
+  }
+}
+
+@media(max-width: 380px) {
+  .landscapebutt h1 {
+    font-size: 3.5em;
+  }
+  .portraitbutt h1 {
+    font-size: 4.0em;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 25px 0 25px 0;
+}
+
+/* Carousel*/
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+  width: 70%;
+  margin: auto;
+}
+
+/*-----------------------------------------------*/
